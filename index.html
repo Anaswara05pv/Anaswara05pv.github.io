@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anaswara P V | CSE Portfolio</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Set up custom configuration for the Inter font -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f7f9fc; /* Light blue-gray background */
+        }
+    </style>
+</head>
+<body class="antialiased text-gray-800">
+
+    <!-- Header & Navigation (Fixed at top) -->
+    <header class="bg-white shadow-md sticky top-0 z-10">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <h1 class="text-2xl font-bold text-indigo-700">Anaswara P V</h1>
+            <nav class="hidden md:flex space-x-6 text-gray-600 font-medium">
+                <a href="#about" class="hover:text-indigo-600 transition duration-300">About</a>
+                <a href="#education" class="hover:text-indigo-600 transition duration-300">Education</a>
+                <a href="#skills" class="hover:text-indigo-600 transition duration-300">Skills</a>
+                <a href="#contact" class="hover:text-indigo-600 transition duration-300">Contact</a>
+            </nav>
+            <!-- Mobile Menu Placeholder (Not fully implemented for brevity, but crucial for responsive design) -->
+            <button class="md:hidden text-gray-600 hover:text-indigo-600 focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+            </button>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 py-8 md:py-12">
+
+        <!-- Hero Section -->
+        <section class="text-center py-16 bg-white rounded-xl shadow-lg mb-12 border-t-4 border-indigo-500">
+            <div class="max-w-3xl mx-auto">
+                <!-- Placeholder for a Profile Image/Icon -->
+                <div class="w-24 h-24 bg-indigo-100 rounded-full mx-auto flex items-center justify-center mb-6 border-4 border-indigo-400">
+                    <span class="text-4xl text-indigo-700">AP</span>
+                </div>
+                <h2 class="text-4xl md:text-5xl font-extrabold text-gray-900 mb-2">Anaswara P V</h2>
+                <p class="text-xl text-indigo-600 font-semibold mb-6">Computer Science & Engineering Student | Aspiring Software Developer</p>
+                <p class="text-gray-500 max-w-lg mx-auto">Currently developing my foundational knowledge in algorithms and software design at Vidya Academy of Science and Technology, Thrissur.</p>
+                <div class="mt-8">
+                    <!-- Call to action button -->
+                    <a href="#contact" class="inline-block bg-indigo-600 text-white px-8 py-3 rounded-full font-semibold hover:bg-indigo-700 transition duration-300 transform hover:scale-105 shadow-lg">
+                        View Projects
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Me Section -->
+        <section id="about" class="py-12">
+            <h3 class="text-3xl font-bold text-center text-gray-800 mb-8">About Me</h3>
+            <div class="bg-white p-6 md:p-10 rounded-xl shadow-lg">
+                <p class="text-lg text-gray-600 leading-relaxed">
+                    Hello! I'm **Anaswara P V**, a dedicated Computer Science and Engineering student hailing from the vibrant cultural city of **Thrissur**. My academic journey is currently focused on mastering core CSE concepts, with a keen interest in modern **web development** and **data structures**.
+                </p>
+                <p class="text-lg text-gray-600 leading-relaxed mt-4">
+                    Thrissur provides a unique backdrop for my studies, blending deep tradition with a growing tech landscape. I am passionate about writing clean, efficient code and actively seek opportunities to apply theoretical knowledge to real-world projects. I believe the best way to learn is by building, and I am constantly expanding my technical stack.
+                </p>
+            </div>
+        </section>
+        
+        <!-- Education Section -->
+        <section id="education" class="py-12">
+            <h3 class="text-3xl font-bold text-center text-gray-800 mb-8">Education</h3>
+            <div class="bg-white p-6 md:p-10 rounded-xl shadow-lg border-l-4 border-teal-500">
+                <div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-4">
+                    <div>
+                        <p class="text-2xl font-semibold text-teal-600">B.Tech in Computer Science & Engineering</p>
+                        <p class="text-xl text-gray-700 mt-1">Vidya Academy of Science and Technology</p>
+                    </div>
+                    <span class="text-sm text-gray-500 mt-2 md:mt-0 px-3 py-1 bg-teal-100 rounded-full font-medium">Ongoing</span>
+                </div>
+                <p class="text-gray-600">
+                    My studies here are providing a strong foundation in key areas including:
+                </p>
+                <ul class="list-disc list-inside text-gray-600 mt-3 ml-4 space-y-1">
+                    <li>Algorithm Design and Analysis</li>
+                    <li>Object-Oriented Programming (Java/Python)</li>
+                    <li>Database Management Systems (SQL)</li>
+                    <li>Operating Systems and Networking Fundamentals</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Technical Skills Section -->
+        <section id="skills" class="py-12">
+            <h3 class="text-3xl font-bold text-center text-gray-800 mb-8">Technical Skills</h3>
+            <div class="bg-white p-6 md:p-10 rounded-xl shadow-lg grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6">
+                
+                <!-- Skill Card 1: Languages -->
+                <div class="bg-gray-50 p-4 rounded-lg shadow-sm hover:shadow-md transition duration-300">
+                    <p class="font-bold text-indigo-600 mb-1">Programming Languages</p>
+                    <span class="inline-block bg-indigo-100 text-indigo-700 text-xs font-semibold px-2 py-1 rounded-full mr-1 mb-1">Python</span>
+                    <span class="inline-block bg-indigo-100 text-indigo-700 text-xs font-semibold px-2 py-1 rounded-full mr-1 mb-1">Java</span>
+                    <span class="inline-block bg-indigo-100 text-indigo-700 text-xs font-semibold px-2 py-1 rounded-full mr-1 mb-1">C</span>
+                </div>
+
+                <!-- Skill Card 2: Web Dev -->
+                <div class="bg-gray-50 p-4 rounded-lg shadow-sm hover:shadow-md transition duration-300">
+                    <p class="font-bold text-indigo-600 mb-1">Web Technologies</p>
+                    <span class="inline-block bg-green-100 text-green-700 text-xs font-semibold px-2 py-1 rounded-full mr-1 mb-1">HTML/CSS</span>
+                    <span class="inline-block bg-green-100 text-green-700 text-xs font-semibold px-2 py-1 rounded-full mr-1 mb-1">JavaScript</span>
+                    <span class="inline-block bg-green-100 text-green-700 text-xs font-semibold px-2 py-1 rounded-full mr-1 mb-1">Tailwind CSS</span>
+                </div>
+
+                <!-- Skill Card 3: Databases -->
+                <div class="bg-gray-50 p-4 rounded-lg shadow-sm hover:shadow-md transition duration-300">
+                    <p class="font-bold text-indigo-600 mb-1">Databases</p>
+                    <span class="inline-block bg-yellow-100 text-yellow-700 text-xs font-semibold px-2 py-1 rounded-full mr-1 mb-1">SQL (MySQL)</span>
+                    <span class="inline-block bg-yellow-100 text-yellow-700 text-xs font-semibold px-2 py-1 rounded-full mr-1 mb-1">MongoDB</span>
+                </div>
+
+                <!-- Skill Card 4: Tools -->
+                <div class="bg-gray-50 p-4 rounded-lg shadow-sm hover:shadow-md transition duration-300">
+                    <p class="font-bold text-indigo-600 mb-1">Tools & Platforms</p>
+                    <span class="inline-block bg-red-100 text-red-700 text-xs font-semibold px-2 py-1 rounded-full mr-1 mb-1">Git</span>
+                    <span class="inline-block bg-red-100 text-red-700 text-xs font-semibold px-2 py-1 rounded-full mr-1 mb-1">VS Code</span>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-12 text-center bg-indigo-50 rounded-xl shadow-lg">
+            <h3 class="text-3xl font-bold text-gray-800 mb-4">Let's Connect!</h3>
+            <p class="text-lg text-gray-600 mb-8">I am always open to discussing new projects, internship opportunities, or interesting coding challenges.</p>
+            <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-6">
+                <!-- Replace with your actual links -->
+                <a href="#" class="bg-indigo-600 text-white px-6 py-3 rounded-full font-semibold hover:bg-indigo-700 transition duration-300">
+                    Email Me
+                </a>
+                <a href="#" class="bg-white text-indigo-600 border border-indigo-600 px-6 py-3 rounded-full font-semibold hover:bg-indigo-50 transition duration-300">
+                    LinkedIn Profile
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-6 mt-12">
+        <div class="container mx-auto px-4 text-center">
+            <p class="text-sm">© 2025 Anaswara P V. Built with Tailwind CSS.</p>
+            <p class="text-xs mt-1 text-gray-400">Thrissur, Kerala</p>
+        </div>
+    </footer>
+
+</body>
+</html>
