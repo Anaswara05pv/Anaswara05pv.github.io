@@ -6,12 +6,34 @@
     <title>Anaswara P V | CSE Portfolio</title>
     <!-- Load Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Set up custom configuration for the Inter font -->
+    <!-- Set up custom configuration for the Inter font and custom CSS enhancements -->
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
         body {
             font-family: 'Inter', sans-serif;
             background-color: #f7f9fc; /* Light blue-gray background */
+        }
+
+        /* --- Custom CSS for enhanced aesthetics and interaction --- */
+
+        /* Style for cards and sections that should lift on hover */
+        .interactive-card {
+            transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+            box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06); /* Default shadow */
+        }
+
+        .interactive-card:hover {
+            transform: translateY(-5px); /* Lift effect on hover */
+            /* Custom stronger shadow that replaces the default one */
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); 
+        }
+
+        /* Custom focus style for accessibility (buttons and links) */
+        /* Changed focus color to Cyan for vibrancy */
+        a:focus, button:focus {
+            outline: 3px solid rgba(6, 182, 212, 0.7); /* Cyan focus ring */
+            outline-offset: 3px;
+            border-radius: 9999px; /* Matches the rounded-full style */
         }
     </style>
 </head>
@@ -20,15 +42,17 @@
     <!-- Header & Navigation (Fixed at top) -->
     <header class="bg-white shadow-md sticky top-0 z-10">
         <div class="container mx-auto px-4 py-4 flex justify-between items-center">
-            <h1 class="text-2xl font-bold text-indigo-700">Anaswara P V</h1>
+            <!-- Changed header title color to cyan-600 -->
+            <h1 class="text-2xl font-bold text-cyan-600">Anaswara P V</h1>
             <nav class="hidden md:flex space-x-6 text-gray-600 font-medium">
-                <a href="#about" class="hover:text-indigo-600 transition duration-300">About</a>
-                <a href="#education" class="hover:text-indigo-600 transition duration-300">Education</a>
-                <a href="#skills" class="hover:text-indigo-600 transition duration-300">Skills</a>
-                <a href="#contact" class="hover:text-indigo-600 transition duration-300">Contact</a>
+                <!-- Changed nav link hover color to cyan-500 -->
+                <a href="#about" class="hover:text-cyan-500 transition duration-300">About</a>
+                <a href="#education" class="hover:text-cyan-500 transition duration-300">Education</a>
+                <a href="#skills" class="hover:text-cyan-500 transition duration-300">Skills</a>
+                <a href="#contact" class="hover:text-cyan-500 transition duration-300">Contact</a>
             </nav>
-            <!-- Mobile Menu Placeholder (Not fully implemented for brevity, but crucial for responsive design) -->
-            <button class="md:hidden text-gray-600 hover:text-indigo-600 focus:outline-none">
+            <!-- Mobile Menu Placeholder -->
+            <button class="md:hidden text-gray-600 hover:text-cyan-500 focus:outline-none">
                 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
             </button>
         </div>
@@ -37,28 +61,33 @@
     <main class="container mx-auto px-4 py-8 md:py-12">
 
         <!-- Hero Section -->
-        <section class="text-center py-16 bg-white rounded-xl shadow-lg mb-12 border-t-4 border-indigo-500">
+        <!-- Changed border color to cyan-500 -->
+        <section class="text-center py-16 bg-white rounded-xl shadow-lg mb-12 border-t-4 border-cyan-500">
             <div class="max-w-3xl mx-auto">
                 <!-- Placeholder for a Profile Image/Icon -->
-                <div class="w-24 h-24 bg-indigo-100 rounded-full mx-auto flex items-center justify-center mb-6 border-4 border-indigo-400">
-                    <span class="text-4xl text-indigo-700">AP</span>
+                <!-- Changed icon background/border/text colors -->
+                <div class="w-24 h-24 bg-cyan-100 rounded-full mx-auto flex items-center justify-center mb-6 border-4 border-cyan-400">
+                    <span class="text-4xl text-cyan-700">AP</span>
                 </div>
-                <h2 class="text-4xl md:text-5xl font-extrabold text-gray-900 mb-2">Anaswara P V</h2>
-                <p class="text-xl text-indigo-600 font-semibold mb-6">Computer Science & Engineering Student | Aspiring Software Developer</p>
+                <!-- VIBRANCY BOOST: Added gradient text effect (now Blue/Cyan) -->
+                <h2 class="text-4xl md:text-5xl font-extrabold mb-2 bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-cyan-600">Anaswara P V</h2>
+                <!-- Changed subtitle color to cyan-500 -->
+                <p class="text-xl text-cyan-500 font-semibold mb-6">Computer Science & Engineering Student | Aspiring Software Developer</p>
                 <p class="text-gray-500 max-w-lg mx-auto">Currently developing my foundational knowledge in algorithms and software design at Vidya Academy of Science and Technology, Thrissur.</p>
                 <div class="mt-8">
-                    <!-- Call to action button -->
-                    <a href="#contact" class="inline-block bg-indigo-600 text-white px-8 py-3 rounded-full font-semibold hover:bg-indigo-700 transition duration-300 transform hover:scale-105 shadow-lg">
+                    <!-- Call to action button - Changed colors to cyan-600/700 -->
+                    <a href="#contact" class="inline-block bg-cyan-600 text-white px-8 py-3 rounded-full font-semibold hover:bg-cyan-700 transition duration-300 transform hover:scale-105 shadow-lg">
                         View Projects
                     </a>
                 </div>
             </div>
         </section>
 
-        <!-- About Me Section -->
+        <!-- About Me Section (Kept neutral for readability, but retained interactive card effect) -->
         <section id="about" class="py-12">
             <h3 class="text-3xl font-bold text-center text-gray-800 mb-8">About Me</h3>
-            <div class="bg-white p-6 md:p-10 rounded-xl shadow-lg">
+            <!-- Applied interactive-card class here -->
+            <div class="bg-white p-6 md:p-10 rounded-xl shadow-lg interactive-card">
                 <p class="text-lg text-gray-600 leading-relaxed">
                     Hello! I'm **Anaswara P V**, a dedicated Computer Science and Engineering student hailing from the vibrant cultural city of **Thrissur**. My academic journey is currently focused on mastering core CSE concepts, with a keen interest in modern **web development** and **data structures**.
                 </p>
@@ -68,10 +97,11 @@
             </div>
         </section>
         
-        <!-- Education Section -->
+        <!-- Education Section (Secondary accent color retained for contrast) -->
         <section id="education" class="py-12">
             <h3 class="text-3xl font-bold text-center text-gray-800 mb-8">Education</h3>
-            <div class="bg-white p-6 md:p-10 rounded-xl shadow-lg border-l-4 border-teal-500">
+            <!-- Applied interactive-card class here -->
+            <div class="bg-white p-6 md:p-10 rounded-xl shadow-lg border-l-4 border-teal-500 interactive-card">
                 <div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-4">
                     <div>
                         <p class="text-2xl font-semibold text-teal-600">B.Tech in Computer Science & Engineering</p>
@@ -96,32 +126,32 @@
             <h3 class="text-3xl font-bold text-center text-gray-800 mb-8">Technical Skills</h3>
             <div class="bg-white p-6 md:p-10 rounded-xl shadow-lg grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6">
                 
-                <!-- Skill Card 1: Languages -->
-                <div class="bg-gray-50 p-4 rounded-lg shadow-sm hover:shadow-md transition duration-300">
-                    <p class="font-bold text-indigo-600 mb-1">Programming Languages</p>
-                    <span class="inline-block bg-indigo-100 text-indigo-700 text-xs font-semibold px-2 py-1 rounded-full mr-1 mb-1">Python</span>
-                    <span class="inline-block bg-indigo-100 text-indigo-700 text-xs font-semibold px-2 py-1 rounded-full mr-1 mb-1">Java</span>
-                    <span class="inline-block bg-indigo-100 text-indigo-700 text-xs font-semibold px-2 py-1 rounded-full mr-1 mb-1">C</span>
+                <!-- Skill Card 1: Languages - Changed colors to cyan-600/100 -->
+                <div class="bg-gray-50 p-4 rounded-lg shadow-sm interactive-card">
+                    <p class="font-bold text-cyan-600 mb-1">Programming Languages</p>
+                    <span class="inline-block bg-cyan-100 text-cyan-700 text-xs font-semibold px-2 py-1 rounded-full mr-1 mb-1">Python</span>
+                    <span class="inline-block bg-cyan-100 text-cyan-700 text-xs font-semibold px-2 py-1 rounded-full mr-1 mb-1">Java</span>
+                    <span class="inline-block bg-cyan-100 text-cyan-700 text-xs font-semibold px-2 py-1 rounded-full mr-1 mb-1">C</span>
                 </div>
 
-                <!-- Skill Card 2: Web Dev -->
-                <div class="bg-gray-50 p-4 rounded-lg shadow-sm hover:shadow-md transition duration-300">
-                    <p class="font-bold text-indigo-600 mb-1">Web Technologies</p>
+                <!-- Skill Card 2: Web Dev (Green for consistency) -->
+                <div class="bg-gray-50 p-4 rounded-lg shadow-sm interactive-card">
+                    <p class="font-bold text-cyan-600 mb-1">Web Technologies</p>
                     <span class="inline-block bg-green-100 text-green-700 text-xs font-semibold px-2 py-1 rounded-full mr-1 mb-1">HTML/CSS</span>
                     <span class="inline-block bg-green-100 text-green-700 text-xs font-semibold px-2 py-1 rounded-full mr-1 mb-1">JavaScript</span>
                     <span class="inline-block bg-green-100 text-green-700 text-xs font-semibold px-2 py-1 rounded-full mr-1 mb-1">Tailwind CSS</span>
                 </div>
 
-                <!-- Skill Card 3: Databases -->
-                <div class="bg-gray-50 p-4 rounded-lg shadow-sm hover:shadow-md transition duration-300">
-                    <p class="font-bold text-indigo-600 mb-1">Databases</p>
+                <!-- Skill Card 3: Databases (Yellow for consistency) -->
+                <div class="bg-gray-50 p-4 rounded-lg shadow-sm interactive-card">
+                    <p class="font-bold text-cyan-600 mb-1">Databases</p>
                     <span class="inline-block bg-yellow-100 text-yellow-700 text-xs font-semibold px-2 py-1 rounded-full mr-1 mb-1">SQL (MySQL)</span>
                     <span class="inline-block bg-yellow-100 text-yellow-700 text-xs font-semibold px-2 py-1 rounded-full mr-1 mb-1">MongoDB</span>
                 </div>
 
-                <!-- Skill Card 4: Tools -->
-                <div class="bg-gray-50 p-4 rounded-lg shadow-sm hover:shadow-md transition duration-300">
-                    <p class="font-bold text-indigo-600 mb-1">Tools & Platforms</p>
+                <!-- Skill Card 4: Tools (Red for consistency) -->
+                <div class="bg-gray-50 p-4 rounded-lg shadow-sm interactive-card">
+                    <p class="font-bold text-cyan-600 mb-1">Tools & Platforms</p>
                     <span class="inline-block bg-red-100 text-red-700 text-xs font-semibold px-2 py-1 rounded-full mr-1 mb-1">Git</span>
                     <span class="inline-block bg-red-100 text-red-700 text-xs font-semibold px-2 py-1 rounded-full mr-1 mb-1">VS Code</span>
                 </div>
@@ -129,16 +159,17 @@
             </div>
         </section>
 
-        <!-- Contact Section -->
-        <section id="contact" class="py-12 text-center bg-indigo-50 rounded-xl shadow-lg">
+        <!-- Contact Section - Changed background color to cyan-50 and button colors -->
+        <section id="contact" class="py-12 text-center bg-cyan-50 rounded-xl shadow-lg">
             <h3 class="text-3xl font-bold text-gray-800 mb-4">Let's Connect!</h3>
             <p class="text-lg text-gray-600 mb-8">I am always open to discussing new projects, internship opportunities, or interesting coding challenges.</p>
             <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-6">
-                <!-- Replace with your actual links -->
-                <a href="#" class="bg-indigo-600 text-white px-6 py-3 rounded-full font-semibold hover:bg-indigo-700 transition duration-300">
+                <!-- Primary Button - Changed colors to cyan-600/700 -->
+                <a href="#" class="bg-cyan-600 text-white px-6 py-3 rounded-full font-semibold hover:bg-cyan-700 transition duration-300">
                     Email Me
                 </a>
-                <a href="#" class="bg-white text-indigo-600 border border-indigo-600 px-6 py-3 rounded-full font-semibold hover:bg-indigo-50 transition duration-300">
+                <!-- Secondary Button - Changed colors to cyan-600 -->
+                <a href="#" class="bg-white text-cyan-600 border border-cyan-600 px-6 py-3 rounded-full font-semibold hover:bg-cyan-50 transition duration-300">
                     LinkedIn Profile
                 </a>
             </div>
